@@ -62,6 +62,17 @@ Check the test cases with Gradle
 
 
 ## Workflow
+I have 3 branches on this repo as follows
+
+-**main-app**: It is the main branch to merge all the features to be be publishes on production branch
+
+I created another 2 branches to develop 2 features seperatly that is creating an **add() function** and **multiply() function** seperatly as a feature
+
+-**feature/addString**: I created this branch to develop add function seperately and to test it
+
+-**feature/multiplyString**: I created this branch to develop and test the multiply function alongside the add function in it which is finally merged to main branch
+
+
 
 So to understand how actually it works i have created gradle file to check the test cases everytime a new feature is added
 
@@ -76,6 +87,8 @@ def test_add_one_number(self):
 Each time whenever a function is created that adds one number the test_add_one_number() function tests it and then merges the feature if all test cases passes belonging to it passes
 
 So to implement it correctly on the version control system with TDD cycle i created a workflow on github that initializes certain checks everytime i commit the changes
+
+The workflow is implemented on main branch i.e main-app you can directly check it in actions tab
 
 ```yaml
 name: Continuous Integration
